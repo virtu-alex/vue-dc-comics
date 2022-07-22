@@ -1,13 +1,30 @@
 main {
     color: white;
 
-    &>section:nth-child(1) {
+    & section:nth-child(1) {
         background-color: black;
         padding: 50px $outer_padding;
     }
 
-    &>section:nth-child(2) {
-        background-color: blue;
-        padding: 10px $outer_padding;
+    & section:nth-child(2) {
+        background-color: #0B7CEC;
+        padding: 50px $outer_padding;
+        justify-content: center;
+    }
+
+    & .banner {
+        display: flex;
+    }
+    
+    & ul {
+        display: flex;
+    }
+    
+    & li {
+        display: flex;
+        align-items: center;
+    }
+    & span {
+        padding-left: 10px;
     }
 }

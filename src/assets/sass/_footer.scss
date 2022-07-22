@@ -1,6 +1,6 @@
 footer {
     padding: 30px $outer_padding;
-    background-image: url("./assets/img/footer-bg.jpg");
+    // background-image: url("../sass/img/footer-bg.jpg");
     background-size: cover;
     height: 400px;
     display: flex;
@@ -25,7 +25,7 @@ footer {
 
     & .dc-logo {
         background-repeat: no-repeat;
-        background-image: url('./assets/img/dc-logo-bg.png');
+        // background-image: url('../img/dc-logo-bg.png');
         width: 800px;
         height: 800px;
         transform: translateY(-100px);

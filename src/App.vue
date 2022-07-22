@@ -11,7 +11,7 @@ Questo bonus nasconde un'insidia legata alla renderizzazione delle immagini che 
   <div id="app">
     <BaseHeader :links="links" />
     <BaseMain />
-    <BaseFooter :links="links"/>
+    <BaseFooter :links="links" />
     <LinksFooter />
   </div>
 </template>
