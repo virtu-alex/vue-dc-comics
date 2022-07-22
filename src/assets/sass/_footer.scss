@@ -4,9 +4,11 @@ footer {
     background-size: cover;
     height: 400px;
     display: flex;
+    overflow: hidden;
 
     & a {
-        color: white;
+        color: grey;
+        font-size: 0.8rem;
     }
 
     & h4 {
@@ -17,5 +19,15 @@ footer {
     & nav {
         color: white;
         display: flex;
+        width: 60%;
+        line-height: 22px;
+    }
+
+    & .dc-logo {
+        background-repeat: no-repeat;
+        background-image: url('./assets/img/dc-logo-bg.png');
+        width: 800px;
+        height: 800px;
+        transform: translateY(-100px);
     }
 }

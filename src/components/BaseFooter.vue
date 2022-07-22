@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li>
-          <h4>DC COMICS</h4>
+          <h4>DC COMIC</h4>
         </li>
         <li v-for="(link, i) in links" :key="i">
           <a :href="link.url">{{ link.text }}</a>
@@ -43,6 +43,10 @@
         <li><a href="#">DC Power Visa</a></li>
       </ul>
     </nav>
+      <div class="dc-logo"></div>
+      <div class="bottom-footer">
+
+      </div>
   </footer>
 </template>
 
