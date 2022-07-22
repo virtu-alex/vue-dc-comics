@@ -9,18 +9,23 @@ Questo bonus nasconde un'insidia legata alla renderizzazione delle immagini che 
 
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+      <BaseHeader />
+      <BaseMain />
+      <BaseFooter />
+    </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import BaseHeader from "./components/BaseHeader.vue";
+import BaseMain from "./components/BaseMain.vue";
+import BaseFooter from "./components/BaseFooter.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    BaseHeader,
+    BaseMain,
+    BaseFooter
   },
 };
 </script>
@@ -28,10 +33,17 @@ export default {
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+body {
+  height: 100vh;
+  background-color: black;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 </style>
