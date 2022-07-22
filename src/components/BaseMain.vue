@@ -1,7 +1,12 @@
 <template>
-  <div class="container">
-    
-  </div>
+  <main>
+    <section>
+      <h1>--Content goes here--</h1>
+    </section>
+    <section>
+      <h1>--Content goes here--</h1>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -10,6 +15,5 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped>
 </style>

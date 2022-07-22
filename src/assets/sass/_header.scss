@@ -1,0 +1,11 @@
+header {
+    padding: 0px $outer_padding;
+    background-color: white;
+
+    & .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px;
+    }
+}

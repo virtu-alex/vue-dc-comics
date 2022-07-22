@@ -9,10 +9,10 @@ Questo bonus nasconde un'insidia legata alla renderizzazione delle immagini che 
 
 <template>
   <div id="app">
-      <BaseHeader />
-      <BaseMain />
-      <BaseFooter />
-    </div>
+    <BaseHeader :links="links" />
+    <BaseMain />
+    <BaseFooter />
+  </div>
 </template>
 
 <script>
@@ -22,28 +22,103 @@ import BaseFooter from "./components/BaseFooter.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      links: [
+        {
+          text: "Characters",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "#",
+          current: false,
+        },
+      ],
+    };
+  },
   components: {
     BaseHeader,
     BaseMain,
-    BaseFooter
+    BaseFooter,
   },
 };
 </script>
 
 <style lang="scss">
+@import './assets/sass/style.scss';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+
 body {
-  height: 100vh;
   background-color: black;
 }
+
 .container {
   margin: 0 auto;
-  max-width: 1400px;
 }
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+ul li {
+  padding: 0px 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
 }
 </style>

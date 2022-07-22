@@ -1,0 +1,13 @@
+main {
+    color: white;
+
+    &>section:nth-child(1) {
+        background-color: black;
+        padding: 50px $outer_padding;
+    }
+
+    &>section:nth-child(2) {
+        background-color: blue;
+        padding: 10px $outer_padding;
+    }
+}
