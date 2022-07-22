@@ -1,0 +1,21 @@
+footer {
+    padding: 30px $outer_padding;
+    background-image: url("./assets/img/footer-bg.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+
+    & a {
+        color: white;
+    }
+
+    & h4 {
+        font-size: 1.5rem;
+        padding: 10px 0px;
+    }
+
+    & nav {
+        color: white;
+        display: flex;
+    }
+}

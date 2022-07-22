@@ -8,4 +8,13 @@ header {
         justify-content: space-between;
         padding: 15px 0px;
     }
+
+    & ul {
+        display: flex;
+        text-decoration: none;
+    }
+    & a{
+        color: black
+    }
+   
 }

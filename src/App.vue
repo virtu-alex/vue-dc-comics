@@ -11,7 +11,7 @@ Questo bonus nasconde un'insidia legata alla renderizzazione delle immagini che 
   <div id="app">
     <BaseHeader :links="links" />
     <BaseMain />
-    <BaseFooter />
+    <BaseFooter :links="links"/>
   </div>
 </template>
 
@@ -111,14 +111,12 @@ h1 {
 
 ul {
   list-style-type: none;
-  display: flex;
 }
 ul li {
   padding: 0px 10px;
 }
 
-ul li a {
+a {
   text-decoration: none;
-  color: black;
 }
 </style>
