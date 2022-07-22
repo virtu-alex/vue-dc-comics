@@ -44,9 +44,6 @@
       </ul>
     </nav>
       <div class="dc-logo"></div>
-      <div class="bottom-footer">
-
-      </div>
   </footer>
 </template>
 

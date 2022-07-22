@@ -12,6 +12,7 @@ Questo bonus nasconde un'insidia legata alla renderizzazione delle immagini che 
     <BaseHeader :links="links" />
     <BaseMain />
     <BaseFooter :links="links"/>
+    <LinksFooter />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ Questo bonus nasconde un'insidia legata alla renderizzazione delle immagini che 
 import BaseHeader from "./components/BaseHeader.vue";
 import BaseMain from "./components/BaseMain.vue";
 import BaseFooter from "./components/BaseFooter.vue";
+import LinksFooter from "./components/LinksFooter.vue";
 
 export default {
   name: "App",
@@ -82,6 +84,7 @@ export default {
     BaseHeader,
     BaseMain,
     BaseFooter,
+    LinksFooter,
   },
 };
 </script>
@@ -112,6 +115,7 @@ h1 {
 ul {
   list-style-type: none;
 }
+
 ul li {
   padding: 0px 10px;
 }
@@ -119,4 +123,6 @@ ul li {
 a {
   text-decoration: none;
 }
+
+
 </style>

@@ -1,0 +1,31 @@
+.link-footer {
+    padding: 0px $outer_padding;
+    height: 150px;
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .footer-right {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    & .footer-right img{
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+    }
+    & .footer-right span{
+        color: #0B7CEC;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin-right: 5px;
+    }
+    & .footer-left a{
+        color: white;
+        border: 2px solid #0B7CEC;
+        padding: 20px;
+    }
+}
