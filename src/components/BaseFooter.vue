@@ -20,30 +20,18 @@
         <li>
           <h4>DC</h4>
         </li>
-        <li><a href="#">Terms Of Use</a></li>
-        <li><a href="#">Privacy policy (New)</a></li>
-        <li><a href="#">Ad Choices</a></li>
-        <li><a href="#">Advertising</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Subscriptions</a></li>
-        <li><a href="#">Talent Workshop</a></li>
-        <li><a href="#">CPSC Cerificates</a></li>
-        <li><a href="#">Ratings</a></li>
-        <li><a href="#">Shop Help</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li v-for="(listDc, i) in listsDc" :key="i">
+          <a href="#">{{ listDc.text }}</a>
+        </li>
       </ul>
       <ul>
         <li>
           <h4>SITES</h4>
         </li>
-        <li><a href="#">DC</a></li>
-        <li><a href="#">MAD Magazine</a></li>
-        <li><a href="#">DC Kids</a></li>
-        <li><a href="#">DC Universe</a></li>
-        <li><a href="#">DC Power Visa</a></li>
+        <li v-for="(site,i) in sites" :key="i"><a href="#">{{site.text}}</a></li>
       </ul>
     </nav>
-      <div class="dc-logo"></div>
+    <div class="dc-logo"></div>
   </footer>
 </template>
 
@@ -51,6 +39,62 @@
 export default {
   name: "BaseFooter",
   props: ["links"],
+  data() {
+    return {
+      listsDc: [
+        {
+          text: "Terms of Use",
+        },
+        {
+          text: "Privacy policy (new)",
+        },
+        {
+          text: "Ad Choices",
+        },
+        {
+          text: "Advertising",
+        },
+        {
+          text: "Jobs",
+        },
+        {
+          text: "Subsriptions",
+        },
+        {
+          text: "Talent Workshop",
+        },
+        {
+          text: "CPSC Certificates",
+        },
+        {
+          text: "Ratings",
+        },
+        {
+          text: "Shop Help",
+        },
+        {
+          text: "Contact Us",
+        },
+      ],
+      sites: [
+        {
+          text: "DC",
+        },
+        {
+          text: "MAD Magazines",
+        },
+        {
+          text: "DC Kids",
+        },
+        {
+          text: "DC Universe",
+        },
+        {
+          text: "DC Power visa",
+        },
+      ],
+    };
+  },
 };
 </script>
 

@@ -90,7 +90,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/sass/style.scss';
+@import "./assets/sass/style.scss";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
@@ -123,6 +123,4 @@ ul li {
 a {
   text-decoration: none;
 }
-
-
 </style>
