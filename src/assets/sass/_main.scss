@@ -10,10 +10,14 @@ main {
         background-color: #0B7CEC;
         padding: 50px $outer_padding;
         justify-content: center;
+        width: 100%;
     }
 
     & .banner {
         display: flex;
+    }
+    & .banner img {
+        height: 60%;
     }
     
     & ul {

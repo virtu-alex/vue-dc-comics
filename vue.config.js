@@ -4,7 +4,6 @@ module.exports = defineConfig({
   css: {
     loaderOptions: {
       css: {
-
           url: false,
       },
     },
