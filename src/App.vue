@@ -10,7 +10,8 @@ Questo bonus nasconde un'insidia legata alla renderizzazione delle immagini che 
 <template>
   <div id="app">
     <BaseHeader :links="links" />
-    <BaseMain  />
+    
+    <BaseMain />
     <BaseFooter :links="links" />
     <LinksFooter />
   </div>
@@ -21,7 +22,6 @@ import BaseHeader from "./components/BaseHeader.vue";
 import BaseMain from "./components/BaseMain.vue";
 import BaseFooter from "./components/BaseFooter.vue";
 import LinksFooter from "./components/LinksFooter.vue";
-// import BookCards from "./components/BookCards.vue";
 
 export default {
   name: "App",
@@ -86,6 +86,7 @@ export default {
     BaseMain,
     BaseFooter,
     LinksFooter,
+    
   },
 };
 </script>
